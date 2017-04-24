@@ -1,0 +1,6 @@
+nohup php /var/www/html/getnow/btc.php &nohup php /var/www/html/getnow/EURUSD.php &nohup php /var/www/html/getnow/GBPUSD.php &nohup php /var/www/html/getnow/USDJPY.php &nohup php /var/www/html/getnow/USOil.php &nohup php /var/www/html/getnow/XAGUSD.php &nohup php /var/www/html/getnow/XAUUSD.php &
+
+
+
+//杀死所有php 进程 
+ps -ef|grep php|grep -v grep|cut -c 9-15|xargs kill -9
